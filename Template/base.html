@@ -1,0 +1,21 @@
+<!-- base.html -->
+<html>
+<head>
+    <title>MSAU Home</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MSAU Home</h1>
+    <a href="{% url 'course_add' %}">Add Course</a>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
